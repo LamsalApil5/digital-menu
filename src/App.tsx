@@ -1,4 +1,3 @@
-// src/App.tsx
 import React from 'react';
 import { menuData } from './data/menuData';
 import Category from './components/MenuCategories';
@@ -8,9 +7,8 @@ const App: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      {categories.map(category => (
-        <Category key={category.id} category={category} items={items} />
-      ))}
+      {/* Render the Category component with all categories and items */}
+      <Category categories={categories} items={items} />
     </div>
   );
 };
